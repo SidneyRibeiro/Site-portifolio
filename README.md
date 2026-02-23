@@ -1,2 +1,2 @@
 # Site-portifolio
-Aprendo um pouco mais sobre HTML
+Aprendendo um pouco mais sobre HTML
