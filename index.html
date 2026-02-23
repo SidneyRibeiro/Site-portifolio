@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">MeuSite</div>
+        <div class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#sobre">Sobre</a>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="home-container">
+        <div class="hero-content">
+
+            <h1>Olá, eu sou Sidney Ribeiro</h1>
+
+            <p class="subtitle">
+                Desenvolvedor Full Stack em evolução 🚀 <br>
+                Estudante de Análise e Desenvolvimento de Sistemas 3/5 (ADS). <br>
+                Criando experiências modernas com estética futurista.
+            </p>
+
+            <a href="#projetos" class="btn">
+                <span>Explorar Portfólio</span>
+            </a>
+
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/sidney-ribeiro-265996149/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/SidneyRibeiro" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="projects-section">
+        <h2 class="section-title">Projetos</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>Portfólio Pessoal</h3>
+                <p>
+                    Site desenvolvido com HTML e CSS focado em responsividade,
+                    identidade futurista e organização de layout.
+                </p>
+                <a href="#" class="project-link">Ver Projeto</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Calculadora Web</h3>
+                <p>
+                    Projeto para prática de lógica de programação e manipulação
+                    de DOM com JavaScript.
+                </p>
+                <a href="https://github.com/SidneyRibeiro" target="_blank" class="project-link">
+                    Ver no GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Projeto em Desenvolvimento</h3>
+                <p>
+                    Sistema em construção focado em CRUD e estruturação de banco
+                    de dados.
+                </p>
+                <a href="#" class="project-link disabled">Em breve</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="about-section">
+        <h2 class="section-title">Sobre Mim</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    Sou Sidney Ribeiro, tenho 31 anos, profissional de TI com experiência em suporte técnico, infraestrutura e redes de computadores. Atualmente atuo no Hospital Municipal Dr. Munnir Rafful, oferecendo suporte ao sistema Vivver, manutenção de equipamentos e apoio direto às equipes assistenciais.
+
+Tenho experiência prática com redes ópticas (FTTH/GPON), testes com OTDR e atendimento técnico em campo, desenvolvendo forte capacidade de resolução de problemas e atuação sob pressão.
+
+Cursando Análise e Desenvolvimento de Sistemas e estudando inglês.
+                </p>
+
+                <p>
+                    Meu objetivo é me tornar um desenvolvedor seja front-end ou back-end,
+                    Gosto de conhecer como as coisas funcionam como um todo e o que mais me motiva é aprender cada vez mais.
+                </p>
+
+                <p>
+                    Atualmente estou desenvolvendo meus primeiros projetos
+                    e compartilhando minha evolução.
+                </p>
+            </div>
+        </div>
+    </section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll('.project-card');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => {
+        observer.observe(card);
+    });
+
+});
+</script>
+</body>
+</html>
