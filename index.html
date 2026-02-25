@@ -86,6 +86,50 @@
         </div>
     </section>
 
+    <section id="evolucao" class="evolution-section">
+    <h2 class="section-title">🚀 Jornada Full Stack em Construção</h2>
+
+    <div class="evolution-grid">
+
+        <div class="evolution-card">
+            <h3>Front-End</h3>
+            <p>
+                Desenvolvendo interfaces modernas com HTML, CSS e iniciando estudos em JavaScript
+                para criação de experiências interativas.
+            </p>
+        </div>
+
+        <div class="evolution-card">
+            <h3>Back-End</h3>
+            <p>
+                Revisando fundamentos de Python e aprofundando conhecimentos em lógica
+                para futura construção de APIs e sistemas.
+            </p>
+        </div>
+
+        <div class="evolution-card">
+            <h3>Banco de Dados</h3>
+            <p>
+                Estudando modelagem e estruturação de dados com PostgreSQL,
+                fortalecendo a base para aplicações completas.
+            </p>
+        </div>
+
+        <div class="evolution-card">
+            <h3>Base Técnica</h3>
+            <p>
+                Experiência prática em infraestrutura, redes e suporte técnico N2.
+            </p>
+        </div>
+
+        <div class="evolution-card">
+            <h3>Inglês</h3>
+            <p>Desenvolvendo fluência para leitura e comunicação.</p>
+        </div>
+
+    </div>
+</section>
+
     <!-- SOBRE -->
     <section id="sobre" class="about-section">
         <h2 class="section-title">Sobre Mim</h2>
@@ -93,21 +137,16 @@
         <div class="about-container">
             <div class="about-text">
                 <p>
-                    Sou Sidney Ribeiro, tenho 31 anos, profissional de TI com experiência em suporte técnico, infraestrutura e redes de computadores. Atualmente atuo no Hospital Municipal Dr. Munnir Rafful, oferecendo suporte ao sistema Vivver, manutenção de equipamentos e apoio direto às equipes assistenciais.
+                    Sou Sidney Ribeiro, tenho 31 anos e sou profissional de TI com experiência em suporte técnico, infraestrutura e redes de computadores. Atualmente atuo no Hospital Municipal Dr. Munnir Rafful, oferecendo suporte ao sistema Vivver, realizando manutenção de equipamentos e prestando apoio direto às equipes assistenciais.</p>
 
-Tenho experiência prática com redes ópticas (FTTH/GPON), testes com OTDR e atendimento técnico em campo, desenvolvendo forte capacidade de resolução de problemas e atuação sob pressão.
-
-Cursando Análise e Desenvolvimento de Sistemas e estudando inglês.
-                </p>
-
-                <p>
-                    Meu objetivo é me tornar um desenvolvedor seja front-end ou back-end,
-                    Gosto de conhecer como as coisas funcionam como um todo e o que mais me motiva é aprender cada vez mais.
-                </p>
-
-                <p>
-                    Atualmente estou desenvolvendo meus primeiros projetos
-                    e compartilhando minha evolução.
+                    <p>
+                    Tenho experiência prática com redes ópticas (FTTH/GPON), OTDR e atendimento técnico em campo, desenvolvendo forte capacidade de resolução de problemas e atuação sob pressão.</p>
+                        <p>
+Cursando Análise e Desenvolvimento de Sistemas e estudando inglês, busco evoluir constantemente na área de desenvolvimento de software.</p>
+                            <p>
+Meu objetivo é me tornar um desenvolvedor, seja front-end ou back-end. Gosto de entender como as tecnologias funcionam de forma integrada e o que mais me motiva é aprender continuamente e aplicar esse conhecimento na prática.</p>
+                                <p>
+"Acredito que o futuro não é sobre substituir pessoas, mas sobre pessoas que sabem utilizar a inteligência artificial para ir mais longe." </p>
                 </p>
             </div>
         </div>
@@ -115,7 +154,7 @@ Cursando Análise e Desenvolvimento de Sistemas e estudando inglês.
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-    const cards = document.querySelectorAll('.project-card');
+    const elements = document.querySelectorAll('.project-card, .evolution-card');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -127,8 +166,8 @@ document.addEventListener("DOMContentLoaded", function () {
         threshold: 0.2
     });
 
-    cards.forEach(card => {
-        observer.observe(card);
+    elements.forEach(el => {
+        observer.observe(el);
     });
 
 });
