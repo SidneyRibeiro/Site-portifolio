@@ -299,6 +299,42 @@ body {
     pointer-events: none;
 }
 
+/* =========================
+   EM EVOLUÇÃO
+========================= */
+
+.evolution-section {
+    padding: 140px 8%;
+    background-color: #111;
+}
+
+.evolution-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.evolution-card {
+    background: #151515;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.evolution-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.evolution-card:hover {
+    transform: translateY(-8px);
+    border-color: #00c3ff;
+    box-shadow: 0 0 20px rgba(0,195,255,0.2);
+}
 
 /* =========================
    SOBRE
